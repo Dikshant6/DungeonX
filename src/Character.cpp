@@ -1,7 +1,7 @@
 #include "Character.h"
 #include <iostream>
 
-Character::Character(std::string name) : name(name), health(100), level(1), defence(10), attackPower(10), mana(200)
+Character::Character(std::string name) : name(name), health(100), level(1), defence(10), attackPower(10), mana(200), maxHealth(100)
 {
 }
 
@@ -64,4 +64,18 @@ void Character::displayStats() const
     std::cout << "Mana: " << mana << std::endl;
 
     std::cout << "=====================================================" << std::endl;
+}
+int Character::getHealth() const
+{
+    return health;
+}
+
+std::string Character::getName() const
+{
+    return name;
+}
+
+int Character::getMaxHealth() const
+{
+    return maxHealth;
 }

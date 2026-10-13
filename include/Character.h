@@ -13,6 +13,7 @@ protected:
     int defence;
     int attackPower;
     int mana;
+    int maxHealth;
 
     // Functions
 public:
@@ -25,6 +26,9 @@ public:
     void displayStats() const;
     int getDefence() const;
     int getAttackPower() const;
+    std::string getName() const;
+    int getHealth() const;
+    int getMaxHealth() const;
 };
 
 #endif

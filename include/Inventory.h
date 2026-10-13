@@ -5,6 +5,7 @@
 #include <vector>
 #include "Item.h"
 #include <cstddef>
+#include "Weapon.h"
 
 class Inventory
 {
@@ -20,6 +21,7 @@ public:
     void inventoryStats() const;
     void addItem(std::unique_ptr<Item> item);
     void removeItem(std::size_t index);
+    Weapon *findWeaponByName(const std::string &name);
 };
 
 #endif // !INVENTORY_H

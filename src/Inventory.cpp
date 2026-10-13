@@ -117,3 +117,17 @@ void Inventory::removeItem(std::size_t index)
 
     items.erase(items.begin() + index);
 }
+Weapon *Inventory::findWeaponByName(const std::string &name)
+{
+    for (const auto &item : items)
+    {
+        Weapon *weapon = dynamic_cast<Weapon *>(item.get());
+
+        if (weapon && weapon->getName() == name)
+        {
+            return weapon;
+        }
+    }
+
+    return nullptr;
+}
