@@ -1,7 +1,8 @@
 #include "Item.h"
 
-Item::Item(std::string name) : name(name){}
+Item::Item(std::string name) : name(name) {}
 
-std::string Item::getName() const{
+std::string Item::getName() const
+{
     return name;
 }
