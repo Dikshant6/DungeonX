@@ -139,7 +139,7 @@ namespace UI
 
     void showVictory(const std::string &enemyName)
     {
-        clearScreen();
+        // clearScreen();
         std::cout << '\n';
         line('=');
         centered("DUNGEON CLEARED", BOLD + GREEN);
